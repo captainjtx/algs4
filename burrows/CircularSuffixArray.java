@@ -20,7 +20,7 @@ public class CircularSuffixArray {
 	}
 
 	private char getChar(String s, int circular, int pos) {
-		return s.charAt((circular+pos)%len);
+		return s.charAt((circular+pos) % len);
 	}
 	private void swap(int[] array, int i, int j) {
 		int tmp = array[i];
@@ -88,7 +88,7 @@ public class CircularSuffixArray {
 		StdOut.println();
 		for (int i = 0; i < csa.length(); ++i) {
 			for (int j = 0; j < csa.length(); ++j) {
-				StdOut.print(s.charAt((csa.index(i)+j)%s.length()));
+				StdOut.print(s.charAt((csa.index(i)+j) % s.length()));
 				StdOut.print(" ");
 			}
 			StdOut.println();
